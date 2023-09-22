@@ -1,3 +1,6 @@
+import Page from "./component/page";
+import Header from "./component/header";
+
 function App() {
   const data = {
     listing_name: "Іст-Сайд Біл",
@@ -84,16 +87,12 @@ function App() {
     },
 
     additional_properties: {
-      house_rules:
-        "No smoking or pets allowed. Quiet hours from 10:00 PM to 7:00 AM.",
-      cancellation_policy:
-        "Flexible cancellation policy with full refund if canceled 7 days before check-in.",
-      local_transportation:
-        "Public buses and taxis available within walking distance.",
+      house_rules: "No smoking or pets allowed. Quiet hours from 10:00 PM to 7:00 AM.",
+      cancellation_policy: "Flexible cancellation policy with full refund if canceled 7 days before check-in.",
+      local_transportation: "Public buses and taxis available within walking distance.",
       host_languages: ["English", "Spanish"],
       special_offers: "10% discount for bookings of 7 nights or more.",
-      "check-in_instructions":
-        "Check-in time is 3:00 PM. Please contact us in advance with your estimated arrival time.",
+      "check-in_instructions": "Check-in time is 3:00 PM. Please contact us in advance with your estimated arrival time.",
     },
 
     guestReviews: [
@@ -101,22 +100,19 @@ function App() {
         id: 43454,
         guestName: "Alice Johnson",
         rating: 5,
-        review:
-          "Amazing experience! The staff was very friendly and the facilities were top-notch.",
+        review: "Amazing experience! The staff was very friendly and the facilities were top-notch.",
       },
       {
         id: 75543,
         guestName: "Bob Smith",
         rating: 4,
-        review:
-          "Great location and beautiful views. However, the prices at the restaurant were a bit high.",
+        review: "Great location and beautiful views. However, the prices at the restaurant were a bit high.",
       },
       {
         id: 55431,
         guestName: "Eve Williams",
         rating: 5,
-        review:
-          "Absolutely loved the spa treatments. It was a relaxing and rejuvenating stay.",
+        review: "Absolutely loved the spa treatments. It was a relaxing and rejuvenating stay.",
       },
     ],
 
@@ -144,7 +140,11 @@ function App() {
     ],
   };
 
-  return <div>Hello World</div>;
+  return (
+    <Page>
+      <Header />
+    </Page>
+  );
 }
 
 export default App;
