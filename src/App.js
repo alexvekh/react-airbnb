@@ -1,5 +1,7 @@
 import Page from "./component/page";
 import Header from "./component/header";
+import Title from "./component/title";
+import Photo from "./component/photo";
 
 function App() {
   const data = {
@@ -143,6 +145,15 @@ function App() {
   return (
     <Page>
       <Header />
+      <Title
+        title={data.listing_name}
+        rating={data.reviews_summary.average_rating}
+        review={data.reviews_summary.total_reviews}
+        city={data.location.city}
+        country={data.location.country}
+        superhost={data.superhost}
+      />
+      <Photo src={data.image} name={data.listing_name} />
     </Page>
   );
 }
