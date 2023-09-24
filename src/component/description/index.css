@@ -1,0 +1,11 @@
+.description__block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #000;
+}
