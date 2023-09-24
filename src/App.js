@@ -2,6 +2,7 @@ import Page from "./component/page";
 import Header from "./component/header";
 import Title from "./component/title";
 import Photo from "./component/photo";
+import Price from "./component/price";
 
 function App() {
   const data = {
@@ -154,6 +155,15 @@ function App() {
         superhost={data.superhost}
       />
       <Photo src={data.image} name={data.listing_name} />
+      <Price
+        price={data.price.original_price}
+        discount={data.price.discounted_price}
+        currency={data.price.currency}
+        cleaning={data.price.cleaning_fee}
+        service={data.price.service_fee}
+        checkin={data.availability.checkin_date}
+        checkout={data.availability.checkout_date}
+      ></Price>
     </Page>
   );
 }
