@@ -3,6 +3,7 @@ import Header from "./component/header";
 import Title from "./component/title";
 import Photo from "./component/photo";
 import Price from "./component/price";
+import RoomList from "./component/room-list";
 
 function App() {
   const data = {
@@ -164,6 +165,7 @@ function App() {
         checkin={data.availability.checkin_date}
         checkout={data.availability.checkout_date}
       ></Price>
+      <RoomList roomTypes={data.roomTypes}></RoomList>
     </Page>
   );
 }
