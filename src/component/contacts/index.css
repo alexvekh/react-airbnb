@@ -26,3 +26,18 @@
   gap: 20px;
 
 }
+
+.contact__value {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.contact__value:not(:last-child)::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 4px;
+  border-radius: 4px;
+  background-color: #000;
+}

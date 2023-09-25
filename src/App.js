@@ -8,6 +8,7 @@ import Description from "./component/description";
 import Details from "./component/details";
 import Amenities from "./component/amenities";
 import Contacts from "./component/contacts";
+import Properties from "./component/properties";
 
 function App() {
   const data = {
@@ -184,6 +185,7 @@ function App() {
         phone={data.contact_info.phone}
         info={data.contact_info.info}
       ></Contacts>
+      <Properties title="Додаткові властивості" properties={data.additional_properties} />
     </Page>
   );
 }

@@ -10,9 +10,9 @@ export default function Contacts({ name, title, contactImage, response_rate, res
         <div className="contact__title">
           <Heading>{title}</Heading>
           <div className="contact__info">
-            <span className="title__sub-value">{phone} рейтинг</span>
-            <span className="title__sub-value">{response_time} рейтинг</span>
-            <span className="title__sub-value">{response_rate} рейтинг</span>
+            <span className="contact__value">{phone} рейтинг</span>
+            <span className="contact__value">{response_time} рейтинг</span>
+            <span className="contact__value">{response_rate} рейтинг</span>
           </div>
         </div>
       </div>
