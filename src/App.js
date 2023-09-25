@@ -5,6 +5,9 @@ import Photo from "./component/photo";
 import Price from "./component/price";
 import RoomList from "./component/room-list";
 import Description from "./component/description";
+import Details from "./component/details";
+import Amenities from "./component/amenities";
+import Contacts from "./component/contacts";
 
 function App() {
   const data = {
@@ -169,7 +172,18 @@ function App() {
       <RoomList roomTypes={data.roomTypes}></RoomList>
       <Description title="Опис" children={data.description} />
       {/* <Description title="Опис"> {data.description} </Description> */}
+      <Details title="Деталі властивості:" property_details={data.property_details} />
       <Description title="Про сусідів" children={data.neighborhood_info} />
+      <Amenities title="Зручності:" amenities={data.amenities} />
+      <Contacts
+        name={data.contact_info.name}
+        title={`Господар - ${data.contact_info.name}`}
+        contactImage={data.contact_info.image}
+        response_rate={`${data.contact_info.response_rate}% відсотків`}
+        response_time={data.contact_info.response_time}
+        phone={data.contact_info.phone}
+        info={data.contact_info.info}
+      ></Contacts>
     </Page>
   );
 }

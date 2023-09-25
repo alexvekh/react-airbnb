@@ -1,0 +1,14 @@
+.details__block {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.details__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+

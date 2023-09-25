@@ -1,0 +1,28 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact__header {
+  display: grid;
+  grid-template-columns: 80px 100%;
+  gap: 20px;
+}
+
+.contact__picture {
+  border-radius: 40px;
+}
+
+.contact__tittle {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+  gap: 20px;
+
+}
