@@ -29,7 +29,8 @@ export default function Price({ price, discount, currency, ...rest }) {
 function List({ currency, cleaning = 0, service = 0, checkin, checkout }) {
   return (
     <ul className="price__list">
-      <ListItem imageSrc={test} title="Hello !!!">
+      <ListItem>
+        {/* <ListItem imageSrc={test} title="Hello !!!"> */}
         <span>Плата за прибирання:</span>
         <span>
           {currency}

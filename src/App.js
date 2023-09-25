@@ -9,6 +9,8 @@ import Details from "./component/details";
 import Amenities from "./component/amenities";
 import Contacts from "./component/contacts";
 import Properties from "./component/properties";
+import Reviews from "./component/reviews";
+import Attractions from "./component/attractions";
 
 function App() {
   const data = {
@@ -186,6 +188,8 @@ function App() {
         info={data.contact_info.info}
       ></Contacts>
       <Properties title="Додаткові властивості" properties={data.additional_properties} />
+      <Reviews guestReviews={data.guestReviews} />
+      <Attractions title="Пам'ятки поблизу" attractions={data.nearbyAttractions} />
     </Page>
   );
 }
